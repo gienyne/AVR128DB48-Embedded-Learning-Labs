@@ -14,7 +14,7 @@ The syntax is inspired by **NASM (Netwide Assembler)**.
 - **Registers** A, B, C, D : General-purpose 8-bit registers used to store temporary values and addresses.
 - **Memory** : The simulator provides 256 bytes of RAM. The output display begins at memory address `232`.
 - **Flags (`Z`, `C`, `F`)** : Status flags automatically modified by arithmetic and comparison instructions:
- The simulator provides three status flags:
+ The simulator provides three status flags:  
   `Z` -> Zero Flag  
   `C` -> Carry Flag  
   `F` -> Fault/Error Flag  
