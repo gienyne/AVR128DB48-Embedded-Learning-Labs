@@ -56,17 +56,18 @@ Once your project is open, the following areas of the interface are available:
 
 | # | Element | Description |
 |---|---------|-------------|
-| 1 | Code Editor | Main area for writing and editing code. Breakpoints can be set in the left margin. |
-| 2 | Build (`Ctrl+Shift+B`) | Compiles the project and reports errors or warnings. |
-| 3 | Start Debugging (`F5`) | Uploads and runs the program on the connected board. |
-| 4 | Build toolbar | Quick access to Build and Clean. |
-| 5 | Debug toolbar | Step Into, Step Over, Step Out, Continue, Pause. |
-| 6 | Quick Launch | Search for any IDE function by name. |
-| 7 | Step Into (`F11`) | Enters a function call during debugging. |
-| 8 | Step Over (`F10`) | Executes the next line without entering functions. |
-| 9 | Continue (`F5`) | Resumes execution until the next breakpoint. |
-| 10 | Step Out (`Shift+F11`) | Exits the current function and returns to the caller. |
-| 11 | Target device | Shows the currently selected device (AVR128DB48). |
+| 1 | Open file | Opens an existing file in the IDE. |
+| 2 | Save | Saves the file currently selected in the editor. |
+| 3 | Save all | Saves all open files. |
+| 4 | Build & Upload | Compiles the project and uploads it to the board. |
+| 5 | Start Debugging (paused) | Starts debug mode with execution suspended at the beginning. |
+| 6 | Solution Explorer | Opens the file explorer panel. |
+| 7 | Start Debugging (running) | Starts debug mode with execution running immediately. |
+| 8 | Step Into (`F11`) | When paused at a function call, enters the function body. |
+| 9 | Step Over (`F10`) | When paused at a function call, executes it without entering. |
+| 10 | Step Out (`Shift+F11`) | When inside a function, exits it and returns to the caller. |
+| 11 | Debugger / Programmer | *Depends on your setup - see [Hardware Requirements](../README.md#hardware-requirements).* |
+
 
 ### Useful shortcuts
 
