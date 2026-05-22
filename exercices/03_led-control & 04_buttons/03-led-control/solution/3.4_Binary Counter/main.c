@@ -7,7 +7,7 @@
  *   directly to one LED pin, no bit manipulation is needed -
  *   the hardware does the mapping automatically.
  *
- *   A uint8_t variable naturally holds values 0–255 and wraps
+ *   A uint8_t variable naturally holds values 0â€“255 and wraps
  *   back to 0 on overflow, which matches the 8-LED display range.
  *
  * Target: AVR128DB48
@@ -15,6 +15,7 @@
 
 #include <avr/io.h>
 #include "../../shared/leds.h"
+#include "../../shared/leds.c"
 
 int main(void)
 {
