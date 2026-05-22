@@ -9,7 +9,6 @@
 
 #include <avr/io.h>
 #include "../../shared/leds.h"
-#include "../../shared/leds.c"
 
 int main(void)
 {
