@@ -11,14 +11,14 @@ The syntax is inspired by **NASM (Netwide Assembler)**.
 
 ## What the Simulator Shows You
 
-- **Registers A, B, C, D** — General-purpose 8-bit registers used to store temporary values and addresses.
+- **Registers A, B, C, D** - General-purpose 8-bit registers used to store temporary values and addresses.
 - **Memory** — The simulator provides 256 bytes of RAM. The output display begins at memory address `232`.
-- **Flags (`Z`, `C`, `F`)** — Status flags automatically set by arithmetic and comparison instructions.
-  - `Z` — Zero Flag
-  - `C` — Carry Flag
-  - `F` — Fault/Error Flag
-- **Stack (`SP`)** — A special memory area used to temporarily save data during function calls. Instructions such as `PUSH`, `POP`, `CALL`, and `RET` use the stack.
-- **Instruction Pointer (`IP`)** — Stores the address of the next instruction to execute.
+- **Flags (`Z`, `C`, `F`)** - Status flags automatically set by arithmetic and comparison instructions.
+  - `Z` -> Zero Flag
+  - `C` -> Carry Flag
+  - `F` -> Fault/Error Flag
+- **Stack (`SP`)**: A special memory area used to temporarily save data during function calls. Instructions such as `PUSH`, `POP`, `CALL`, and `RET` use the stack.
+- **Instruction Pointer (`IP`)**: Stores the address of the next instruction to execute.
 
 ---
 
@@ -71,14 +71,14 @@ print:                     ; Subroutine: print(C: source, D: destination)
 
 This program prints `"Hello World!"` into the simulator output memory.
 
-- `JMP start` — skips over the data definition and jumps directly to the code
-- `DB "Hello World!"` — defines the string as a sequence of bytes in memory
+- `JMP start`: skips over the data definition and jumps directly to the code
+- `DB "Hello World!"`: defines the string as a sequence of bytes in memory
 - `DB 0` — marks the end of the string (null terminator)
-- `MOV C, hello` — loads the memory address of the string into register C
-- `MOV D, 232` — points D to the output area (starts at address 232)
-- `CALL print` — calls the print subroutine
+- `MOV C, hello`: loads the memory address of the string into register C
+- `MOV D, 232`: points D to the output area (starts at address 232)
+- `CALL print`: calls the print subroutine
 - Inside `print`, each character is read from `[C]` and written to `[D]` until a null byte is found
-- `HLT` — stops execution
+- `HLT`: stops execution
 
 Use the **Step** button to execute one instruction at a time and observe how registers and memory change at each step.
 
@@ -87,7 +87,7 @@ Use the **Step** button to execute one instruction at a time and observe how reg
 ## Exercises
 
 The exercise parts are described in [EXERCISES.md](./EXERCISES.md).  
-Work through them in order. Solutions are in the `solutions/` folder — open them only after solving each part yourself.
+Work through them in order. Solutions are in the `solutions/` folder. Open them only after solving each part yourself.
 
 ---
 
@@ -96,8 +96,8 @@ Work through them in order. Solutions are in the `solutions/` folder — open th
 ```
 01_assembler_simulator/
 │
-├── README.md        — this file
-├── EXERCISES.md     — exercise parts 1.1 to 1.6 with hints
+├── README.md        - this file
+├── EXERCISES.md     - exercise parts 1.1 to 1.6 with hints
 │
 └── solutions/
     ├── 1.2-hello-name.asm

@@ -4,7 +4,7 @@
  * Strategy:
  *   Configure PD7 as an output using DIRSET.
  *   Drive it HIGH using OUTSET.
- *   The LED stays on permanently — no loop logic needed.
+ *   The LED stays on permanently.
  *
  * DIRSET writes a 1 to the direction register for each bit that is set,
  * configuring those pins as outputs without affecting the others.
@@ -26,3 +26,4 @@ int main(void)
         /* nothing to do - LED stays on */
     }
 }
+
