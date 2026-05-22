@@ -1,5 +1,5 @@
 /*
- * main.c — Part 3.1: Light Up
+ * main.c - Part 3.1: Light Up
  *
  * Set PD7 as an output and drive it HIGH to turn on a single LED permanently.
  *
@@ -8,6 +8,7 @@
 
 #include <avr/io.h>
 #include "../../shared/leds.h"
+#include "../../shared/leds.c"
 
 int main(void)
 {
