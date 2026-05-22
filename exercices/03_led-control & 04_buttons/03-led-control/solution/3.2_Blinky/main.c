@@ -6,7 +6,7 @@
  *   Both functions use a global volatile counter to implement a
  *   busy-wait delay without blocking the CPU in a single long loop.
  *
- *   volatile tells the compiler not to optimise away the counter —
+ *   volatile tells the compiler not to optimise away the counter â€”
  *   without it, the compiler may detect that the loop has no visible
  *   side effects and remove it entirely.
  *
@@ -18,6 +18,7 @@
 
 #include <avr/io.h>
 #include "../../shared/leds.h"
+#include "../../shared/leds.c"
 
 int main(void)
 {
