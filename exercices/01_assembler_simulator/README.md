@@ -86,7 +86,7 @@ Use the **Step** button to execute one instruction at a time and observe how reg
 
 ## Exercises
 
-The exercise parts are described in [EXERCISES.md](./EXERCISES.md).  
+The exercise parts are described in [EXERCISES.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/01_assembler_simulator/exercise/README.md).  
 Work through them in order. Solutions are in the `solutions/` folder. Open them only after solving each part yourself.
 
 ---
