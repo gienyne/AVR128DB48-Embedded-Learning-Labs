@@ -59,7 +59,7 @@ shared/
 
 ## Exercises
 
-The exercise parts are described in [EXERCISES.md](./EXERCISES.md).  
+The exercise parts are described in [EXERCISES.md](./exercise/EXERCISES.md).  
 Work through them in order. Check `../shared/leds.c` only after solving each part yourself.
 
 ---
