@@ -3,7 +3,7 @@
 Introduction to GPIO output on the AVR128DB48.  
 This exercise covers turning on, blinking, and sequencing LEDs connected to Port D.
 
-> New to Microchip Studio? See the [setup guide](../../docs/microchip-studio-setup.md) first.
+> New to Microchip Studio? See the [setup guide](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/microchip-studio-setup.md) first.
 
 ---
 
@@ -93,4 +93,4 @@ shared/                        (one level up — ../shared/)
 ## Resources
 
 - [AVR128DB48 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf)
-- [Microchip Studio Setup Guide](../../docs/microchip-studio-setup.md)
+- [Microchip Studio Setup Guide](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/microchip-studio-setup.md)
