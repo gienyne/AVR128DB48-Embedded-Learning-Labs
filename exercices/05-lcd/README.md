@@ -3,7 +3,7 @@
 Introduction to I2C communication and character display on the AVR128DB48.  
 This exercise uses a HD44780 1602 LCD connected via an HW-061 I2C interface module.
 
-> New to Microchip Studio? See the [setup guide](../../docs/microchip-studio-setup.md) first.
+> New to Microchip Studio? See the [setup guide](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/microchip-studio-setup.md) first.
 
 ---
 
@@ -139,4 +139,4 @@ Work through them in order. Solutions are in the `solutions/` folder. Open them 
 - [AVR128DB48 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf)
 - [HD44780 LCD Datasheet](https://www.sparkfun.com/datasheets/LCD/HD44780.pdf)
 - [PCF8574 I/O Expander Datasheet](https://www.ti.com/lit/ds/symlink/pcf8574.pdf)
-- [Microchip Studio Setup Guide](../../docs/microchip-studio-setup.md)
+- [Microchip Studio Setup Guide](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/microchip-studio-setup.md)
