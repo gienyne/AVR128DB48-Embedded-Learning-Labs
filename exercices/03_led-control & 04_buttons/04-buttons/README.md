@@ -12,7 +12,7 @@ This exercise covers reading button states, debouncing, and building input-drive
 8 LEDs on Port D (PD0–PD7) and 4 buttons on Port C (PC4–PC7).  
 Each button connects its pin to GND when pressed. The AVR internal pull-up resistor keeps the pin HIGH when the button is open.
 
-![Versuchsaufbau — 8 LEDs and 4 buttons](images/versuchsaufbau3.png)
+![Versuchsaufbau — 8 LEDs and 4 buttons](images/Versuchsaufbau3.png)
 
 | AVR128DB48 Pin | Component |
 |----------------|-----------|
