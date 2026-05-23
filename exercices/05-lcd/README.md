@@ -95,7 +95,7 @@ Always call `lcd_init()` once at the start of `main()` before using any other LC
 
 ## Exercises
 
-The exercise parts are described in [EXERCISES.md](./EXERCISES.md).  
+The exercise parts are described in [EXERCISES.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/05-lcd/exercise/EXERCISES.md).  
 Work through them in order. Solutions are in the `solutions/` folder. Open them only after solving each part yourself.
 
 ---
