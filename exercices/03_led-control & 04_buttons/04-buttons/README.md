@@ -59,7 +59,7 @@ shared/
 
 ## Exercises
 
-The exercise parts are described in [EXERCISES.md](./exercise/EXERCISES.md).  
+The exercise parts are described in [EXERCISES.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/03_led-control%20%26%2004_buttons/04-buttons/exercise/Readme.md).  
 Work through them in order. Check `../shared/leds.c` only after solving each part yourself.
 
 ---
