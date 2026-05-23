@@ -72,7 +72,7 @@ Work through them in order. Check `../shared/leds.c` only after solving each par
 ├── README.md
 ├── EXERCISES.md
 ├── images/
-│   └── versuchsaufbau2.png
+│   └── Versuchsaufbau3.png
 │
 ├── starter/
 │   ├── 4.1-light-by-button/main.c
