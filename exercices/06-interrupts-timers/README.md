@@ -209,7 +209,18 @@ For this reason:
 * internal pull-ups are useful when no external resistor is present,
 * external resistors are preferred when the hardware already defines the input state clearly.
 
+
+### Practical Application for This Exercise
+
+In this exercise, the button is wired with an **external pull-down resistor**.
+* Consequently, the logic is **Active-High** (pressing the button sends 5V / HIGH).
+* To detect a button **press**, we configure the interrupt on a rising edge (`LOW -> HIGH`) without enabling the internal pull-up:
+
+```c
+PORTC.PIN4CTRL = PORT_ISC_RISING_gc; // Triggers on button press (Rising edge)
+
 </details>
+
 
 
 ---
