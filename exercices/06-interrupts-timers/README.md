@@ -234,7 +234,6 @@ Work through them in order. Solutions are in the `solutions/` folder. Open them 
 
 ## Project Structure
 
-```
 06-interrupts-timers/
 │
 ├── README.md
@@ -253,7 +252,6 @@ Work through them in order. Solutions are in the `solutions/` folder. Open them 
     ├── 6.2-timer/main.c
     ├── 6.3-traffic-light/main.c
     └── 6.4-programmable-timer/main.c
-```
 
 ---
 
