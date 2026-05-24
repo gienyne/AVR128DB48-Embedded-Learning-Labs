@@ -173,8 +173,4 @@ shared/                        (one level up — ../shared/)
 ## Resources
 
 - [AVR128DB48 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf)
-<<<<<<< HEAD
 - [Microchip Studio Setup Guide](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/microchip-studio-setup.md)
-=======
-- [Microchip Studio Setup Guide](../../docs/microchip-studio-setup.md)
->>>>>>> a635289 (update README 4 & 5 and add exercice 6)
