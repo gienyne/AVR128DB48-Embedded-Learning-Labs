@@ -27,7 +27,7 @@ Compared to Exercise 05, two buttons are removed and an RGB LED is added on Port
 | GND | Common ground | |
 
 > **Note on color mapping:** the RGB LED used here has no native yellow output.  
-> In Part 6.3 (Traffic Light), blue (PE2) is used in place of yellow as a hardware limitation.  
+> In Part 6.3 (Traffic Light), blue (PE2) is used in place of yellow.  
 > The logical state machine remains correct. Only the displayed color differs from a real traffic light.
 
 ---
