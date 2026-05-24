@@ -218,7 +218,7 @@ In this exercise, the button is wired with an **external pull-down resistor**.
 
 ```c
 PORTC.PIN4CTRL = PORT_ISC_RISING_gc; // Triggers on button press (Rising edge)
-
+```
 </details>
 
 
