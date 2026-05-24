@@ -221,8 +221,6 @@ PORTC.PIN4CTRL = PORT_ISC_RISING_gc; // Triggers on button press (Rising edge)
 ```
 </details>
 
-
-
 ---
 
 ## Exercises
@@ -234,6 +232,7 @@ Work through them in order. Solutions are in the `solutions/` folder. Open them 
 
 ## Project Structure
 
+```
 06-interrupts-timers/
 │
 ├── README.md
@@ -252,6 +251,7 @@ Work through them in order. Solutions are in the `solutions/` folder. Open them 
     ├── 6.2-timer/main.c
     ├── 6.3-traffic-light/main.c
     └── 6.4-programmable-timer/main.c
+```
 
 ---
 
