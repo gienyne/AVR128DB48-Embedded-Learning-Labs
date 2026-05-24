@@ -57,6 +57,93 @@ shared/
 
 ---
 
+
+## Concepts Used in This Exercise
+
+<details>
+<summary>Internal Pull-Up Resistors</summary>
+
+The buttons connect their pin directly to GND when pressed.  
+When the button is open, nothing drives the pin. It would "float" and give unstable readings.
+
+An internal pull-up resistor solves this by connecting the pin to Vdd through a resistor:
+
+```c
+PORTC.PIN4CTRL = PORT_PULLUPEN_bm;   /* enable pull-up on PC4 */
+```
+
+Result:
+- Button open   -> pin reads **HIGH** (pulled to Vdd)
+- Button pressed -> pin reads **LOW**  (connected to GND)
+
+This is called **active-low** input logic.
+
+</details>
+
+<details>
+<summary>Reading Pin State</summary>
+
+To read the current state of an input pin, use the `IN` register:
+
+```c
+if (PORTC.IN & PIN4_bm) {
+    /* PC4 is HIGH -> button not pressed */
+}
+
+if (!(PORTC.IN & PIN4_bm)) {
+    /* PC4 is LOW -> button is pressed */
+}
+```
+
+The `&` operator masks out all bits except the one you care about.  
+If the result is non-zero, that bit is HIGH.
+
+</details>
+
+<details>
+<summary>Button Debouncing</summary>
+
+Mechanical buttons produce multiple rapid voltage transitions on each press  
+called **bounce**. Without debouncing, one physical press can be read as many.
+
+A simple software debounce:
+
+```c
+if (!(PORTC.IN & PIN4_bm)) {       /* first falling edge detected */
+    _delay_ms(30);                  /* wait for bounce to settle   */
+    if (!(PORTC.IN & PIN4_bm)) {   /* confirm button still down   */
+        
+    }
+}
+```
+
+30 ms is typically enough for most mechanical buttons to stop bouncing.
+
+</details>
+
+<details>
+<summary>Edge Detection</summary>
+
+To act only on a **new** press — not while a button is held — compare the current
+state with the previous state:
+
+```c
+uint8_t current  = PORTC.IN & alle_taste;
+uint8_t previous = 0;
+
+if (current && current != previous) {
+    /* new press detected */
+}
+
+previous = current;
+```
+
+A change from 0 to non-zero means a button was just pressed.
+
+</details>
+
+---
+
 ## Exercises
 
 The exercise parts are described in [EXERCISES.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/03_led-control%20%26%2004_buttons/04-buttons/exercise/Readme.md).  
@@ -96,4 +183,8 @@ shared/                        (one level up — ../shared/)
 ## Resources
 
 - [AVR128DB48 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf)
+<<<<<<< HEAD
 - [Microchip Studio Setup Guide](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/microchip-studio-setup.md)
+=======
+- [Microchip Studio Setup Guide](../../docs/microchip-studio-setup.md)
+>>>>>>> a635289 (update README 4 & 5 and add exercice 6)

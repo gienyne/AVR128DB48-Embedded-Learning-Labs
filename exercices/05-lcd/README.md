@@ -93,6 +93,74 @@ Always call `lcd_init()` once at the start of `main()` before using any other LC
 
 ---
 
+
+## Concepts Used in This Exercise
+
+<details>
+<summary>I2C Basics</summary>
+
+I2C is a serial communication protocol that uses only two wires:
+
+- **SDA** -> Serial Data line (data sent bit by bit)
+- **SCL** -> Serial Clock line (synchronises sender and receiver)
+
+Multiple devices can share the same two wires. Each device has a unique **address**  
+so the master can select which one to communicate with.
+
+The AVR128DB48 acts as the I2C **master**. It initiates all communication.  
+The LCD I/O expander (PCF8574) responds to address `0x27`.
+
+```
+AVR128DB48 (master)  ------ SDA (PA2) ----  LCD module (address 0x27)
+                     ------ SCL (PA3) ----
+```
+
+This is why only 2 wires are needed regardless of how many pins the LCD has internally.
+
+</details>
+
+<details>
+<summary>LCD Cursor and Coordinates</summary>
+
+The HD44780 1602 LCD has 2 rows and 16 columns.  
+The cursor position determines where the next character will be written.
+
+```c
+lcd_moveCursor(x, y);
+```
+
+- `x`: column, 0 (leftmost) to 15 (rightmost)
+- `y`: row, 0 (top) or 1 (bottom)
+
+After each `lcd_putChar()` or `lcd_putString()`, the cursor advances automatically  
+from left to right. It does **not** wrap to the next row automatically.
+
+</details>
+
+<details>
+<summary>Integer to String Conversion</summary>
+
+`lcd_putString()` expects a `char*`. There is no built-in function to display integers.  
+You need to convert manually using modulo and division:
+
+```c
+/* extract digits in reverse order, then reverse the string */
+while (number > 0) {
+    buffer[pos++] = '0' + (number % 10);   /* last digit */
+    number /= 10;                           /* remove last digit */
+}
+```
+
+Example for `number = 123`:
+- `123 % 10 = 3` -> `buffer[0] = '3'`
+- `12  % 10 = 2` -> `buffer[1] = '2'`
+- `1   % 10 = 1` -> `buffer[2] = '1'`
+- Reversed: `"123"`
+
+</details>
+
+---
+
 ## Exercises
 
 The exercise parts are described in [EXERCISES.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/05-lcd/exercise/EXERCISES.md).  
