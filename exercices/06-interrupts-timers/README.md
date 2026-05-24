@@ -17,9 +17,9 @@ Compared to Exercise 05, two buttons are removed and an RGB LED is added on Port
 
 | AVR128DB48 Pin | Component | Description |
 |----------------|-----------|-------------|
-| PE0 | RGB LED — Red channel | via series resistor |
-| PE1 | RGB LED — Green channel | via series resistor |
-| PE2 | RGB LED — Blue channel | via series resistor |
+| PE0 | RGB LED -> Red channel | via series resistor |
+| PE1 | RGB LED -> Green channel | via series resistor |
+| PE2 | RGB LED -> Blue channel | via series resistor |
 | PC4 | Button 1 | to GND, interrupt on rising edge |
 | PC5 | Button 2 | to GND, interrupt on rising edge |
 | PA2 | LCD SDA | I2C data line |
