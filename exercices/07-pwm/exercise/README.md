@@ -54,7 +54,7 @@ Write a program that smoothly transitions the RGB LED through the full visible c
 ```
 red -> yellow -> green -> .... -> blue -> magenta -> ... --> red -> ...
 ```
-![Abbildung 1: Verlauf des sichtbaren Lichtspektrums](images/Abbildung1.png)
+![Abbildung 1: Verlauf des sichtbaren Lichtspektrums](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/07-pwm/images/Abbildung1.png)
 Find an appropriate step size and delay so the transition is visibly smooth.
 
 **Questions to think about:**
