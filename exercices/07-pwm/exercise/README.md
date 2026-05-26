@@ -101,7 +101,7 @@ Write a program that moves the servo motor through its full range of motion cont
 | Center | 1.5 ms | 750 |
 | Full right | 2.0 ms | 1000 |
 
-![Abbildung 2:  PWM-Signal zur Ansteuerung des Servomotors](./images/Abbildung2.png)
+![Abbildung 2:  PWM-Signal zur Ansteuerung des Servomotors](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/07-pwm/images/Abbildung2.png)
 
 **Questions to think about:**
 - Why does the servo need a 20 ms period specifically?
