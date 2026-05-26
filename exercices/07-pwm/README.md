@@ -12,7 +12,7 @@ and servo motor position without CPU involvement.
 
 One red LED, one RGB LED, and one servo motor.
 
-![Versuchsaufbau 5 — Red LED, RGB LED, Servo](images/versuchsaufbau5.png)
+![Versuchsaufbau 5 — Red LED, RGB LED, Servo](images/Versuchsaufbau5.png)
 
 | AVR128DB48 Pin | Component | Description |
 |----------------|-----------|-------------|
