@@ -54,7 +54,7 @@ Write a program that smoothly transitions the RGB LED through the full visible c
 ```
 red -> yellow -> green -> .... -> blue -> magenta -> ... --> red -> ...
 ```
-
+![Abbildung 1: Verlauf des sichtbaren Lichtspektrums](./images/Abbildung1)
 Find an appropriate step size and delay so the transition is visibly smooth.
 
 **Questions to think about:**
@@ -100,6 +100,8 @@ Write a program that moves the servo motor through its full range of motion cont
 | Full left | 1.0 ms | 500 |
 | Center | 1.5 ms | 750 |
 | Full right | 2.0 ms | 1000 |
+
+![Abbildung 2:  PWM-Signal zur Ansteuerung des Servomotors](./images/Abbildung2)
 
 **Questions to think about:**
 - Why does the servo need a 20 ms period specifically?
