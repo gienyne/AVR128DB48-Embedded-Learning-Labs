@@ -11,16 +11,16 @@ This exercise uses the ADC to read analog sensors and USART to transmit data to 
 
 LCD display, potentiometer, photoresistor, RGB LED, and 4 buttons.
 
-![Versuchsaufbau 6 — LCD, potentiometer, photoresistor, RGB LED, 4 buttons](images/versuchsaufbau6.png)
+![Versuchsaufbau 6 — LCD, potentiometer, photoresistor, RGB LED, 4 buttons](images/Versuchsauf6.png)
 
 | AVR128DB48 Pin | Component | Description |
 |----------------|-----------|-------------|
 | PF3 (AIN19) | Potentiometer (wiper) | analog voltage input |
 | PF2 (AIN18) | Photoresistor (voltage divider) | analog light level input |
-| PC4 – PC7 | Buttons | digital input with pull-up |
-| PE0 | RGB LED — Red | PWM output |
-| PE1 | RGB LED — Green | PWM output |
-| PE2 | RGB LED — Blue | PWM output |
+| PC4 - PC7 | Buttons | digital input with pull-up |
+| PE0 | RGB LED - Red | PWM output |
+| PE1 | RGB LED - Green | PWM output |
+| PE2 | RGB LED - Blue | PWM output |
 | PA2 | LCD SDA | I2C data |
 | PA3 | LCD SCL | I2C clock |
 | PB0 (TX) | USART3 transmit | serial output to computer |
@@ -222,7 +222,7 @@ character (e.g. `.`) is detected, then set a flag for the main loop to process.
 ## Exercises
 
 The exercise parts are described in [EXERCISES.md](./EXERCISES.md).  
-Work through them in order. Solutions are in the `solutions/` folder — open them only after solving each part yourself.
+Work through them in order. Solutions are in the `solutions/` folder. Open them only after solving each part yourself.
 
 ---
 
