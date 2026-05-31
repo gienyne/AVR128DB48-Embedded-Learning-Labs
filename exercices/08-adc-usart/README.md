@@ -42,7 +42,7 @@ Parts 8.1 and 8.2 use the LCD library from Exercise 05.
 ## Concepts Used in This Exercise
 
 <details>
-<summary>ADC — Analog to Digital Conversion</summary>
+<summary>ADC: Analog to Digital Conversion</summary>
 
 The ADC converts a continuous analog voltage into a discrete digital number.  
 The AVR128DB48 ADC has 12-bit resolution, producing values from 0 to 4095.
