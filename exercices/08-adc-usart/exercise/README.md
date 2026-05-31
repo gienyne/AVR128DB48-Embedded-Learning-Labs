@@ -40,7 +40,7 @@ to avoid display flickering.
 Read the analog voltage from the photoresistor voltage divider connected to PF2 (AIN18).  
 Display the voltage in millivolts and the light level as a percentage on the LCD.
 
-**Calibration:** the upper bound (100%) should be set dynamically — the maximum ADC  
+**Calibration:** the upper bound (100%) should be set dynamically. The maximum ADC  
 value seen so far becomes the reference for 100%. Point a flashlight at the sensor  
 to calibrate the upper limit.
 
