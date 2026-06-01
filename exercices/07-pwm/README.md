@@ -140,9 +140,9 @@ So `PER = 10000`.
 Pulse width values:
 
 ```
-1.0 ms → 500,000 × 0.001 = 500   ticks  (full left)
-1.5 ms → 500,000 × 0.0015 = 750  ticks  (center)
-2.0 ms → 500,000 × 0.002 = 1000  ticks  (full right)
+1.0 ms -> 500,000 × 0.001 = 500   ticks  (full left)
+1.5 ms -> 500,000 × 0.0015 = 750  ticks  (center)
+2.0 ms -> 500,000 × 0.002 = 1000  ticks  (full right)
 ```
 
 </details>
