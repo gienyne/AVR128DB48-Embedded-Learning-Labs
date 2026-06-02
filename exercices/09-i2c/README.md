@@ -35,8 +35,8 @@ over I²C (SDA / SCL), shared with the LCD module.
 
 | AVR128DB48 Pin | Component | Description |
 |----------------|-----------|-------------|
-| PA2 (SDA) | TCS34725 SDA + LCD SDA | I²C data — shared bus |
-| PA3 (SCL) | TCS34725 SCL + LCD SCL | I²C clock — shared bus |
+| PA2 (SDA) | TCS34725 SDA + LCD SDA | I²C data - shared bus |
+| PA3 (SCL) | TCS34725 SCL + LCD SCL | I²C clock - shared bus |
 | 3.3V / VCC | TCS34725 VIN | sensor power supply |
 | GND | TCS34725 GND | common ground |
 | PA2 (SDA) | LCD SDA | same I²C bus |
@@ -293,7 +293,7 @@ Shorter integration time -> faster updates -> better for bright environments.
 ## Exercises
 
 The exercise descriptions can be found in
-[EXERCISES.md](./EXERCISES.md).
+[EXERCISES.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/09-i2c/exercise/README.md).
 
 Work through the parts in order.
 
