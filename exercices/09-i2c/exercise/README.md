@@ -222,7 +222,7 @@ Create a short report containing:
 * A short explanation of the observed communication
 
 > A complete example analysis is available in
-> [docs/logic-analyzer-i2c.md](./docs/logic-analyzer-i2c.pdf).
+> [docs/logic-analyzer-i2c.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/logic-analyzer-i2c.pdf).
 >
 > Try to analyze your captures yourself before consulting it.
 
