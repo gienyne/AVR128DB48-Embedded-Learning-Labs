@@ -27,9 +27,9 @@ B:180  C:910
 
 | Register | Address | Value | Effect                            |
 | -------- | ------- | ----- | --------------------------------- |
-| ENABLE   | 0x00    | 0x03 (0000 0011)  | Power ON (PON) + ADC Enable (AEN) -> siehe Table 5 Enable Register Datasheet|
-| ATIME    | 0x01    | 0xD5 (1101 0101)  | Integration time = 103 ms -> siehe Table 6  RGBC Timing Register Datasheet        |
-| WTIME    | 0x03    | 0xFF (1111 1111)  | Wait time between measurements  -> siehe Table 7   Wait Time Register Datasheet    |
+| ENABLE   | 0x00    | 0x03 (0000 0011)  | Power ON (PON) + ADC Enable (AEN) -> Table 5 Enable Register Datasheet|
+| ATIME    | 0x01    | 0xD5 (1101 0101)  | Integration time = 103 ms -> Table 6  RGBC Timing Register Datasheet        |
+| WTIME    | 0x03    | 0xFF (1111 1111)  | Wait time between measurements  -> Table 7   Wait Time Register Datasheet    |
 
 ---
 
