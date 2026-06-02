@@ -336,7 +336,7 @@ A complete worked example of a Logic Analyzer analysis is available in
 
 ## Resources
 
-- [TCS34725 Datasheet](https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf)
+- [TCS34725 Datasheet](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/TCS34725_doc.pdf)
 - [AVR128DB48 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf)
 - [I²C Protocol Reference](https://learn.sparkfun.com/tutorials/i2c/all)
 - [Microchip Studio Setup Guide](../../docs/microchip-studio-setup.md)
