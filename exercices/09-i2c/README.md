@@ -195,10 +195,9 @@ The sensor then auto-increments through registers 0x14–0x1B, returning 8 bytes
 
 An example of this transaction captured with a Logic Analyzer can be found in
 
-[docs/logic-analyzer-i2c.md](./docs/logic-analyzer-i2c.md).
+[docs/logic-analyzer-i2c.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/logic-analyzer-i2c.pdf).
 
 The document contains a step-by-step analysis of real I²C frames exchanged between the AVR128DB48, the LCD module and the TCS34725 sensor.
-[`docs/logic-analyzer-i2c.md`](./docs/logic-analyzer-i2c.md).
 
 </details>
 
@@ -304,7 +303,7 @@ Part 9.2 focuses on analyzing the resulting I²C traffic using a Logic Analyzer.
 A reference solution for Part 9.1 is available in the `solutions/` folder.
 
 A complete worked example of a Logic Analyzer analysis is available in
-[docs/logic-analyzer-i2c.md](./docs/logic-analyzer-i2c.md).
+[docs/logic-analyzer-i2c.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/logic-analyzer-i2c.pdf).
 
 > Try to solve and analyze the exercise yourself before consulting the provided solutions.
 
