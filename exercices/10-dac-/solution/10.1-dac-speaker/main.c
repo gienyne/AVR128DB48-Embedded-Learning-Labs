@@ -38,8 +38,8 @@ volatile uint8_t sine_index = 0;
 void DAC_init(void)
 {
     VREF.DAC0REF = VREF_REFSEL_2V048_gc;   // 2.048V reference
-    DAC0.CTRLA   = DAC_ENABLE_bm | DAC_OUTEN_bm; /* enable DAC */
-    DAC0.DATA    = sine_table[0] << 6;      /* initial value */
+    DAC0.CTRLA   = DAC_ENABLE_bm | DAC_OUTEN_bm; // enable DAC
+    DAC0.DATA    = sine_table[0] << 6; // initial value
 }
 
 void timer_init(void)
