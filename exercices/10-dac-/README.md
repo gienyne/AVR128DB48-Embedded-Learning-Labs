@@ -50,7 +50,7 @@ Do not modify this file.
 
 ### Contents of song.h
 
-- `sine_table[]` -> 64-entry lookup table of a full sine wave period (10-bit values, 0–1023)
+- `sine_table[]` -> 64-entry lookup table of a full sine wave period (10-bit values, 0 - 1023)
 - `enum notes` -> all playable note frequencies (e.g. `c1 = 261`, `a1 = 440`, `mute = 1`)
 - `song` struct -> contains `bpm`, `length`, `tone[]`, `tone_length[]`
 - `mario` -> the Mario theme as a `song` instance
