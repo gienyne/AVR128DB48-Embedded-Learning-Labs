@@ -39,6 +39,7 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <util/delay.h>
 #include <stdint.h>
 #include "../../lib/song.h"
 
@@ -49,7 +50,7 @@
 #define NOTE_DURATION_MS(bpm, length) ((60000UL / (bpm)) * (length))
 
 #define MAX_VOLUME     1023
-#define MIN_VOLUME     300
+#define MIN_VOLUME     0
 #define DECAY_STEP     1
 #define DECAY_TICK_MS  2
 
@@ -70,7 +71,7 @@ void DAC_init(void)
 void AudioTimer_init(void)
 {
     TCA0.SINGLE.INTCTRL = TCA_SINGLE_OVF_bm;
-    TCA0.SINGLE.CTRLA   = TCA_SINGLE_CLKSEL_DIV1_gc;   /* starts disabled */
+    TCA0.SINGLE.CTRLA   = TCA_SINGLE_CLKSEL_DIV1_gc;
 }
 
 void TimeTimer_init(void)
@@ -80,8 +81,7 @@ void TimeTimer_init(void)
 	
     TCA1.SINGLE.PER     = 62;
     TCA1.SINGLE.INTCTRL = TCA_SINGLE_OVF_bm;
-    TCA1.SINGLE.CTRLA   = TCA_SINGLE_CLKSEL_DIV64_gc
-                        | TCA_SINGLE_ENABLE_bm;
+    TCA1.SINGLE.CTRLA   = TCA_SINGLE_CLKSEL_DIV64_gc | TCA_SINGLE_ENABLE_bm;
 }
 
 void set_frequency(uint16_t freq)
@@ -89,7 +89,7 @@ void set_frequency(uint16_t freq)
     if (freq == mute) {
         TCA0.SINGLE.CTRLA &= ~TCA_SINGLE_ENABLE_bm;
     } else {
-        TCA0.SINGLE.PER    = TCA_PER(freq);
+        TCA0.SINGLE.PER = TCA_PER(freq);
         TCA0.SINGLE.CTRLA |= TCA_SINGLE_ENABLE_bm;
     }
 }
@@ -133,17 +133,14 @@ void play_song(const song* melody)
         uint16_t freq = melody->tone[i];
         uint16_t duration_ms = (uint16_t)NOTE_DURATION_MS(melody->bpm, melody->tone_length[i]);
 
-        volume = MAX_VOLUME;   // reset volume for each new note
+        volume = MAX_VOLUME; // reset volume for each new note
         current_note_duration = duration_ms;
         note_finished = 0;
 
         set_frequency(freq);
 
-        while (!note_finished) {}   // wait for TCA1 to signal completion 
-
-        /* short silence between notes */
-        set_frequency(mute);
-        for (volatile uint32_t d = 0; d < 15000; d++) {}
+        while (!note_finished) {}  // wait for TCA1 to signal completion 
+		
     }
 
     set_frequency(mute);
