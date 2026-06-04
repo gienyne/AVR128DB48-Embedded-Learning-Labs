@@ -105,7 +105,7 @@ Implement a decay envelope so each note fades like a piano key.
 | Constant | Suggested value | Effect |
 |----------|----------------|--------|
 | `MAX_VOLUME` | 1023 | starting volume |
-| `MIN_VOLUME` | 300 | floor — note never goes fully silent |
+| `MIN_VOLUME` | 300 | floor, note never goes fully silent |
 | `DECAY_STEP` | 1 | how much volume decreases per tick |
 | `DECAY_TICK_MS` | 2 | how often volume decreases (in ms) |
 
