@@ -225,7 +225,7 @@ Work through them in order. Solutions are in the `solutions/` folder.
 ├── EXERCISES.md
 ├── images/
 │   └── versuchsaufbau8.png
-│
+│   └── klaviatur
 ├── lib/
 │   └── song.h
 │
