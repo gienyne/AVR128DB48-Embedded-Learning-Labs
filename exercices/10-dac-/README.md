@@ -211,7 +211,7 @@ a flag `note_finished` is set and the main loop advances to the next note.
 
 ## Exercises
 
-The exercise parts are described in [EXERCISES.md](./EXERCISES.md).  
+The exercise parts are described in [EXERCISES.md](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/exercices/10-dac-/exercise/README.md).  
 Work through them in order. Solutions are in the `solutions/` folder.
 
 ---
