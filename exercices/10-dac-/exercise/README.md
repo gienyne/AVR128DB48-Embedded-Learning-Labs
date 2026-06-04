@@ -111,7 +111,6 @@ Implement a decay envelope so each note fades like a piano key.
 
 **Questions to think about:**
 - Why must decay be applied in the 1 ms timer ISR, not in the audio ISR?
-- What happens if `MIN_VOLUME = 0`? What if it is too high?
 - Why use two separate timers (TCA0 and TCA1)?
 
 <details>
