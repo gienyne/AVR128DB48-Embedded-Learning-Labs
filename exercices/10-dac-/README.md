@@ -12,7 +12,7 @@ connected via a PAM8302A amplifier.
 
 7 buttons as a keyboard, one passive speaker driven by a PAM8302A amplifier.
 
-![Versuchsaufbau 8.1 — Keyboard and Speaker](images/versuchsaufbau8.png)
+![Versuchsaufbau 8.1 — Keyboard and Speaker](images/Versuchsaufbau8.png)
 
 
 | AVR128DB48 Pin | Component | Description |
