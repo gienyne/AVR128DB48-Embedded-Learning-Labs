@@ -244,5 +244,5 @@ Work through them in order. Solutions are in the `solutions/` folder.
 
 ## Resources
 
-- [AVR128DB48 Datasheet — Section 33: DAC](https://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf)
+- [AVR128DB48 Datasheet — Section 34: DAC](https://github.com/gienyne/Some-Embedded-avr128db48-projekt/blob/master/docs/AVR%20Manual%20setz.pdf)
 - [Microchip Studio Setup Guide](../../docs/microchip-studio-setup.md)
