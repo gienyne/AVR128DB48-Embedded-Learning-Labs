@@ -71,7 +71,7 @@ Read 4 buttons on Port C using pull-up resistors and active-low logic.
 Implement debouncing, edge detection, a press counter, and a 4-button binary calculator.
 
 ### Exercise 05: Liquid Crystal Display
-Drive a 16×2 LCD over I²C using the provided library.  
+Drive a 16*2 LCD over I²C using the provided library.  
 Display text, numbers, and animated patterns. Implement integer-to-string conversion.  
 Extend the binary calculator to show results on the LCD.
 
@@ -118,8 +118,8 @@ All exercises from 02 onwards use the **AVR128DB48 Curiosity Nano** development 
 | Component | Used in | Notes |
 |-----------|---------|-------|
 | AVR128DB48 Curiosity Nano | 02–11 | Main microcontroller board |
-| 8* red LED | 03, 04, 08 | with series resistors (~470Ω) |
-| 4* push button | 04, 06, 08 | with external pull-up resistors |
+| 8 * red LED | 03, 04, 08 | with series resistors (~470Ω) |
+| 4 * push button | 04, 06, 08 | with external pull-up resistors |
 | HD44780 1602 LCD + HW-061 I²C module | 05, 06, 08, 09, 11 | I²C address 0x27 |
 | RGB LED (common cathode) | 06, 07, 08 | with series resistors |
 | Potentiometer (10kΩ) | 08 | voltage divider on PF3 |
@@ -127,7 +127,7 @@ All exercises from 02 onwards use the **AVR128DB48 Curiosity Nano** development 
 | Servo motor | 07 | signal on PF4, powered from 5V rail |
 | TCS34725 color sensor | 09 | I²C address 0x29 |
 | PAM8302A amplifier + passive speaker | 10 | DAC output on PD6 |
-| 7* push button (keyboard) | 10 | on PA2–PA7, PB0 |
+| 7 * push button (keyboard) | 10 | on PA2–PA7, PB0 |
 | IR receiver module (38 kHz) | 11 | signal on PD0 |
 | Breadboard + jumper wires | all | |
 | USB cable | all | for programming and power |
