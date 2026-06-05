@@ -1,3 +1,12 @@
+![AVR128DB48](https://img.shields.io/badge/MCU-AVR128DB48-red)
+![Language](https://img.shields.io/badge/Language-C-blue)
+![IDE](https://img.shields.io/badge/IDE-Microchip%20Studio-lightgrey)
+![I2C](https://img.shields.io/badge/I2C-Protocol-orange)
+![USART](https://img.shields.io/badge/USART-Communication-purple)
+![PWM](https://img.shields.io/badge/PWM-Timer-green)
+![ADC](https://img.shields.io/badge/ADC-Analog-yellow)
+![DAC](https://img.shields.io/badge/DAC-Audio-blue)
+
 # Learn Embedded Systems with AVR128DB48
 
 A practical embedded systems learning project built around the **AVR128DB48** microcontroller.
