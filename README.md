@@ -45,7 +45,7 @@ Each exercise includes:
 | [06](./exercices/06-interrupts-timers/) | Interrupts and Timers | Microchip Studio | AVR128DB48 |
 | [07](./exercices/07-pwm/) | Pulse Width Modulation | Microchip Studio | AVR128DB48 |
 | [08](./exercices/08-adc-usart/) | ADC & USART | Microchip Studio | AVR128DB48 |
-| [09](./exercices/09-i2c/) | I²C — Color Sensor | Microchip Studio | AVR128DB48 |
+| [09](./exercices/09-i2c/) | I²C: Color Sensor | Microchip Studio | AVR128DB48 |
 | [10](./exercices/10-dac/) | Digital/Analog Conversion *(Bonus)* | Microchip Studio | AVR128DB48 |
 | [11](./exercices/11-signal-processing/) | Signal Processing - IR Remote | Microchip Studio | AVR128DB48 |
 
