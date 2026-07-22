@@ -39,8 +39,8 @@ Each exercise includes:
 |---|-------|------|----------|
 | [01](./exercices/01_assembler_simulator/) | Assembler Simulator | Browser | None |
 | [02](./exercices/02-system-programming-c/) | Low-Level Programming in C | Microchip Studio | AVR128DB48 |
-| [03](./exercices/03-led-control&04_buttons/) | LED Control | Microchip Studio | AVR128DB48 |
-| [04](./exercices/03-led-control&04_buttons/) | Button Integration | Microchip Studio | AVR128DB48 |
+| [03](https://github.com/gienyne/AVR128DB48-Embedded-Learning-Labs/tree/master/exercices/03_led-control%20%26%2004_buttons/03-led-control) | LED Control | Microchip Studio | AVR128DB48 |
+| [04](https://github.com/gienyne/AVR128DB48-Embedded-Learning-Labs/tree/master/exercices/03_led-control%20%26%2004_buttons/04-buttons) | Button Integration | Microchip Studio | AVR128DB48 |
 | [05](./exercices/05-lcd/) | Liquid Crystal Display | Microchip Studio | AVR128DB48 |
 | [06](./exercices/06-interrupts-timers/) | Interrupts and Timers | Microchip Studio | AVR128DB48 |
 | [07](./exercices/07-pwm/) | Pulse Width Modulation | Microchip Studio | AVR128DB48 |
